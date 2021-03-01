@@ -5,7 +5,4 @@ lang: 'en'
 future: true
 
 header_pages:
-  - pg-index.html
-  - pg-about.html
-  - pg-services.html
-  - pg-contact.html
+  - index.html
