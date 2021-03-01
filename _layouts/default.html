@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="We offer a wide range of tyres, and services including flat repair, wheel alignment, and wheel balancing. Our friendly staff is dedicated to providing a quality service for your budget." />
+  <!-- Title -->
+  <title>{{ page.title }} - {{ site.title }}</title>
+
+  <!-- Links -->
+  <link rel="icon" href="/assets/img/icon.ico" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+  <style>
+    nav {
+      background-color: #343a40ee;
+      backdrop-filter: blur(4px);
+      -moz-backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+    }
+
+    .category-header {
+      border-bottom: 1px solid #eee;
+      font-weight: 500;
+    }
+
+    .up-icon {
+      float: right;
+      color: #337ab7;
+    }
+
+    .cc {
+      top: 50%;
+      display: flex !important;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transform: translateY(-50%);
+      left: 0;
+      right: 0;
+      background-color: #343a40aa;
+      backdrop-filter: blur(4px);
+      -moz-backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+    }
+
+    @media (max-width: 1200px) {
+      legend {
+        font-size: calc(1.275rem + 0.3vw);
+      }
+
+      h1,.h1 {
+        font-size: calc(1.375rem + 1.5vw);
+      }
+
+      h2,.h2 {
+        font-size: calc(1.325rem + 0.9vw);
+      }
+
+      h3, .h3 {
+        font-size: calc(1.3rem + 0.6vw);
+      }
+
+      h4, .h4 {
+        font-size: calc(1.275rem + 0.3vw);
+      }
+
+      .display-1 {
+        font-size: calc(1.725rem + 5.7vw);
+      }
+
+      .display-2 {
+        font-size: calc(1.675rem + 5.1vw);
+      }
+
+      .display-3 {
+        font-size: calc(1.575rem + 3.9vw);
+      }
+
+      .display-4 {
+        font-size: calc(1.475rem + 2.7vw);
+      }
+
+      .close {
+        font-size: calc(1.275rem + 0.3vw);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  {%- include nav.html -%}
+
+  <main class="py-5 mt-5">
+    <div class="container page-content">
+      {{ content }}
+    </div>
+  </main>
+
+  {%- include footer.html -%}
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

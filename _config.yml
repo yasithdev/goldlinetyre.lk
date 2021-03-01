@@ -1,0 +1,11 @@
+url: 'https://www.goldlinetyre.lk'
+baseurl: ''
+title: 'Gold Line Tours and Tyre Centre'
+lang: 'en'
+future: true
+
+header_pages:
+  - pg-index.html
+  - pg-about.html
+  - pg-services.html
+  - pg-contact.html
