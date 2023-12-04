@@ -5,6 +5,10 @@ permalink: '/'
 ---
 
 <style>
+  .img-fluid {
+    height: 50vh!important;
+    object-fit: cover;
+  }
   @media screen and (min-width: 992px) {
     .carousel .carousel-title {
       font-size: 4em;
@@ -56,7 +60,7 @@ permalink: '/'
       </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="{{ site.baseurl }}/assets/img/carousel/image-3.png" alt="Tyre Selection">
+      <img class="d-block w-100 img-fluid" src="{{ site.baseurl }}/assets/img/carousel/image-3.png" alt="Tyre Selection">
       <div class="carousel-caption cc h-100">
         <h3 class="carousel-title">Gold Line Tours and Tyre Centre</h3>
         <p class="carousel-text w-75 w-md-50" style="font-size: small;">Computerized Wheel Alignment and Wheel Balancing</p>
